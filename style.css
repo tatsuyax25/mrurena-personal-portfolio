@@ -28,3 +28,26 @@
   transform: translate(-50%, -50%);
   color: white;
 }
+
+/* About section image CSS */
+.imageAboutPage {
+  width: 100%;
+}
+
+/* About Skill CSS */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container ul {
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
