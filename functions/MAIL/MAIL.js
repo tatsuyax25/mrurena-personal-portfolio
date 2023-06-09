@@ -11,10 +11,10 @@ exports.handler = async (event, context) => {
   });
 
   const mailOptions = {
-    from: 'email',
+    from: data.from,
     to: 'mrurena82@gmail.com',
-    subject: subject,
-    text: `Name: ${name}\nMessage: ${message}`
+    subject: data.subject,
+    text: data.body
   };
 
   try {

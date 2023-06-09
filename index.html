@@ -211,6 +211,27 @@
       </div>
     </footer>
 
+    <!-- Mail function -->
+    <script>
+      const data = {
+        from: 'sender@example.com',
+        to: 'recipient@example.com',
+        subject: 'Email subject',
+        body: 'Email body'
+      };
+
+      fetch('/.netlify/functions/MAIL', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(error => console.error(error));
+    </script>
+
     <!-- Load JavaScript after loading all html content -->
     <script src="script/script.js"></script>
   </body>
