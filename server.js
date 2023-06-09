@@ -25,7 +25,7 @@ app.post('/handle-form', async (req, res) => {
   // Set the email options
   let mailOptions = {
     from: email,
-    to: 'urena_miguel82@outlook.com',
+    to: 'mrurena82@gmail.com',
     subject: subject,
     text: `Name: ${name}\nMessage: ${message}`
   };
