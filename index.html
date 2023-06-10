@@ -185,7 +185,7 @@
           <div class="d-flex justify-content-center align-items-center">
             <div class="form-container col-md-10 col-lg-6">
               <!-- form fields -->
-              <form action="/handle-form">
+              <form action="/handle-form" id="contact-form">
                 <input type="text" class="form-control form-control-lg" placeholder="Name">
                 <input type="email" class="form-control mt-3" placeholder="Email">
                 <input type="text" class="form-control mt-3" placeholder="Subject">
@@ -211,7 +211,33 @@
       </div>
     </footer>
 
-    <!-- Mail function -->
+    <!-- Contact Mail function -->
+    <script>
+      const form = document.querySelector('#contact-form');
+      form.addEventListener('submit', event => {
+        event.preventDefault();
+
+        const data = {
+          from: form.from.value,
+          to: 'recipient@example.com',
+          subject: form.subject.value,
+          body: form.body.value
+        };
+
+        fetch('/.netlify/functions/MAIL', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error(error));
+      });
+    </script>
+
+    <!-- Netlify Mail function -->
     <script>
       const data = {
         from: 'sender@example.com',
