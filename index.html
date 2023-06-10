@@ -224,6 +224,7 @@
           subject: form.subject.value,
           body: form.body.value
         };
+        console.log('Data:', data);
 
         fetch('/.netlify/functions/MAIL', {
           method: 'POST',
@@ -233,8 +234,8 @@
           body: JSON.stringify(data)
         })
         .then(response => response.json())
-        .then(data => console.log(data))
-        .catch(error => console.error(error));
+        .then(data => console.log('Response:', data))
+        .catch(error => console.error('Error:', error));
 
         return false;
       });
@@ -243,22 +244,25 @@
     <!-- Netlify Mail function -->
     <script>
       const data = {
-        from: 'sender@example.com',
-        to: 'recipient@example.com',
-        subject: 'Email subject',
-        body: 'Email body'
-      };
+          from: form.from.value,
+          to: 'recipient@example.com',
+          subject: form.subject.value,
+          body: form.body.value
+        };
+        console.log('Data:', data);
 
-      fetch('/.netlify/functions/MAIL', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-      })
-      .then(response => response.text())
-      .then(data => console.log(data))
-      .catch(error => console.error(error));
+        fetch('/.netlify/functions/MAIL', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        })
+          .then(response => response.json())
+          .then(data => console.log('Response:', data))
+          .catch(error => console.error('Error:', error));
+
+        return false;
     </script>
 
     <!-- Load JavaScript after loading all html content -->
