@@ -234,7 +234,7 @@
         .then(response => response.text())
         .then(data => {
           console.log(data);
-          location.reload();
+          window.location.href = '/thank-you';
         })
         .catch(error => console.error(error));
       });
