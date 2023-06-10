@@ -231,7 +231,7 @@
           },
           body: JSON.stringify(data)
         })
-        .then(response => response.json())
+        .then(response => response.text())
         .then(data => console.log(data))
         .catch(error => console.error(error));
       });
@@ -253,7 +253,7 @@
         },
         body: JSON.stringify(data)
       })
-      .then(response => response.json())
+      .then(response => response.text())
       .then(data => console.log(data))
       .catch(error => console.error(error));
     </script>
