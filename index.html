@@ -185,7 +185,7 @@
           <div class="d-flex justify-content-center align-items-center">
             <div class="form-container col-md-10 col-lg-6">
               <!-- form fields -->
-              <form action="/handle-form" id="contact-form">
+              <form id="contact-form">
                 <input type="text" class="form-control form-control-lg" placeholder="Name" name="name">
                 <input type="email" class="form-control mt-3" placeholder="Email" name="from">
                 <input type="text" class="form-control mt-3" placeholder="Subject" name="subject">
@@ -231,12 +231,11 @@
           },
           body: JSON.stringify(data)
         })
-        .then(response => response.text())
-        .then(data => {
-          console.log(data);
-          window.location.href = '/thank-you';
-        })
+        .then(response => response.json())
+        .then(data => console.log(data))
         .catch(error => console.error(error));
+
+        return false;
       });
     </script>
 
