@@ -186,14 +186,14 @@
             <div class="form-container col-md-10 col-lg-6">
               <!-- form fields -->
               <form action="/handle-form" id="contact-form">
-                <input type="text" class="form-control form-control-lg" placeholder="Name">
-                <input type="email" class="form-control mt-3" placeholder="Email">
-                <input type="text" class="form-control mt-3" placeholder="Subject">
+                <input type="text" class="form-control form-control-lg" placeholder="Name" name="name">
+                <input type="email" class="form-control mt-3" placeholder="Email" name="from">
+                <input type="text" class="form-control mt-3" placeholder="Subject" name="subject">
                 <div class="mb-3 mt-3">
-                  <textarea class="form-control" name="text" id="comment" rows="5" placeholder="Message"></textarea>
+                  <textarea class="form-control" name="body" id="comment" rows="5" placeholder="Message"></textarea>
                 </div>
               </form>
-              <button type="button" class="btn btn-success mt-3">Send</button>
+              <button type="submit" class="btn btn-success mt-3">Send</button>
             </div>
           </div>
         </div>
