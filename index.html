@@ -234,7 +234,16 @@
           body: JSON.stringify(data)
         })
         .then(response => response.json())
-        .then(data => console.log('Response:', data))
+        .then(data => {
+          console.log('Response:', data)
+          // clear form fields
+          document.querySelector("#contact-form input[name='name']").value = "";
+          document.querySelector("#contact-form input[name='from']").value = "";
+          document.querySelector("#contact-form input[name='subject']").value = "";
+          document.querySelector("#contact-form textarea[name='body']").value = "";
+          // refresh page
+          location.reload();
+        })
         .catch(error => console.error('Error:', error));
 
         return false;
@@ -263,19 +272,6 @@
           .catch(error => console.error('Error:', error));
 
         return false;
-    </script>
-
-    <script>
-      document.querySelector("#contact-form button[type='submit']").addEventListener("click", function(event) {
-        event.preventDefault();
-        // clear form  fields
-        document.querySelector("#contact-form input[name='name']").value = "";
-        document.querySelector("#contact-form input[name='from']").value = "";
-        document.querySelector("#contact-form input[name='subject']").value = "";
-        document.querySelector("#contact-form textarea[name='body']").value = "";
-        // refresh page
-        location.reload();
-      });
     </script>
 
     <!-- Load JavaScript after loading all html content -->
