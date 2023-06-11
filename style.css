@@ -44,6 +44,18 @@
 .flex-container ul {
   margin: auto;
   text-align: center; /* center the text within each ul element */
+  list-style: none; /* remove default list style */
+  padding-left: 0; /* remove default padding */
+}
+
+.flex-container li {
+  position: relative; /* position li elements relative to themselves */
+}
+
+.flex-container li::before {
+  content: "•"; /* add custom bullet */
+  position: absolute; /* position bullet absolutely */
+  left: -1rem; /* move bullet to the left of the li element */
 }
 
 @media (max-width: 600px) {
