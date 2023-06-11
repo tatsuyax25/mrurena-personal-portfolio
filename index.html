@@ -265,6 +265,19 @@
         return false;
     </script>
 
+    <script>
+      document.querySelector("#contact-form button[type='submit']").addEventListener("click", function(event) {
+        event.preventDefault();
+        // clear form  fields
+        document.querySelector("#contact-form input[name='name']").value = "";
+        document.querySelector("#contact-form input[name='form']").value = "";
+        document.querySelector("#contact-form input[name='subject']").value = "";
+        document.querySelector("#contact-form textarea[name='body']").value = "";
+        // refresh page
+        location.reload();
+      });
+    </script>
+
     <!-- Load JavaScript after loading all html content -->
     <script src="script/script.js"></script>
   </body>
