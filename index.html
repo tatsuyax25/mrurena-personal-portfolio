@@ -222,7 +222,7 @@
           from: form.from.value,
           to: 'recipient@example.com',
           subject: form.subject.value,
-          body: form.body.value
+          body: `Email: ${form.from.value}\n\n${form.body.value}`
         };
         console.log('Data:', data);
 
