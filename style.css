@@ -43,6 +43,7 @@
 
 .flex-container ul {
   margin: auto;
+  text-align: center; /* center the text within each ul element */
 }
 
 @media (max-width: 600px) {
