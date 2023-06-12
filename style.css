@@ -115,7 +115,7 @@
 }
 
 /* Spacing on all section */
-#about, #services, #portfolio, #contact {
+#about, #services, #projects, #contact {
   margin-top: 4rem;
   padding-top: 4rem;
 }
