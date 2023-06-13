@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Hi, I'm Miguel Urena, a full-stack web developer with experience in [list some of your skills or technologies]. I have a [degree or certification] in [field of study] from [institution].
+Hi, I'm Miguel Urena, a full-stack web developer with experience in [list some of your skills or technologies]. I have a Certificate of completion in Software Engineer Immersive from General Assembly and a Bachelor's Degress from Westwood College.
 
 ## Skills
 
@@ -13,13 +13,14 @@ Hi, I'm Miguel Urena, a full-stack web developer with experience in [list some o
 
 ## Projects
 
-### Project 1
+### Project 1 - Plantivity
 
-[Project description]
+Plantivity motivates users by completing their daily self-care tasks and rewarding them with a badge. They assign themselves their three daily tasks and points, which help your self-care plant grow!
 
-[Link to repository](https://github.com/yourusername/project1)
+Repository: https://github.com/tatsuyax25/team6-hackathon-fe (Front-end)
+            https://github.com/tatsuyax25/team6-hackathon-be (Back-end) 
 
-[Link to live demo](https://project1.example.com)
+Live Demo: https://plantivity.netlify.app
 
 ### Project 2
 
@@ -31,9 +32,9 @@ Hi, I'm Miguel Urena, a full-stack web developer with experience in [list some o
 
 ## Contact
 
-Email: [your email address]
+Email: mrurena82@gmail.com
 
-[Link to LinkedIn profile](https://www.linkedin.com/in/yourusername)
+LinkedIn: https://www.linkedin.com/in/urena-miguel82/
 
-[Link to online portfolio](https://yourportfolio.example.com)
+Portfolio: https://miguel-portfolio-website.netlify.app
 
