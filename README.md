@@ -38,3 +38,4 @@ LinkedIn: https://www.linkedin.com/in/urena-miguel82/
 
 Portfolio: https://miguel-portfolio-website.netlify.app
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/301fa5cd-7694-42e1-a78e-172d85e37590/deploy-status)](https://app.netlify.com/sites/miguel-portfolio-website/deploys)
