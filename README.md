@@ -8,8 +8,8 @@ Hi, I'm Miguel Urena, a full-stack web developer with experience in [list some o
 
 - HTML5, CSS3, JavaScript
 - Node.js, Express, MongoDB
-- React, Redux
-- [any other skills or technologies]
+- React, Bootstrap, RESTful API
+- Python, Java, C++
 
 ## Projects
 
@@ -24,11 +24,11 @@ Live Demo: https://plantivity.netlify.app
 
 ### Project 2
 
-[Project description]
+Connect 4 is played against the computer. Each player takes turns to drop a color checker into the grid. To win, a player must get four duplicate color checkers in a row. A winning row combination can be horizontal, vertical, or diagonal.
 
-[Link to repository](https://github.com/yourusername/project2)
+Repository: https://github.com/tatsuyax25/connect-four
 
-[Link to live demo](https://project2.example.com)
+Live Demo: https://connect-four-web-game.netlify.app
 
 ## Contact
 
