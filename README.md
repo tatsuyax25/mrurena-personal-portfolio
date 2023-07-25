@@ -22,7 +22,7 @@ Repository: https://github.com/tatsuyax25/team6-hackathon-fe (Front-end)
 
 Live Demo: https://plantivity.netlify.app
 
-### Project 2
+### Project 2 - Connect 4 Web Game
 
 Connect 4 is played against the computer. Each player takes turns to drop a color checker into the grid. To win, a player must get four duplicate color checkers in a row. A winning row combination can be horizontal, vertical, or diagonal.
 
