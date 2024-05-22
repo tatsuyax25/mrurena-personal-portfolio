@@ -13,7 +13,7 @@ Hi, I'm Miguel Urena, a full-stack web developer with experience in [list some o
 
 ## Projects
 
-### Project 1 - Plantivity
+### Hackathon - Plantivity
 
 Plantivity motivates users by completing their daily self-care tasks and rewarding them with a badge. They assign themselves their three daily tasks and points, which help your self-care plant grow!
 
@@ -22,7 +22,15 @@ Repository: https://github.com/tatsuyax25/team6-hackathon-fe (Front-end)
 
 Live Demo: https://plantivity.netlify.app
 
-### Project 2 - Connect 4 Web Game
+### Snake Web Game JS
+
+Navigate the snake to eat food, avoid walls and its own body, and achieve the highest score possible. Each piece of food increases the snake's length, adding to the challenge.
+
+Repository: https://github.com/tatsuyax25/snake-game-js
+
+Live Demo: https://snake-web-game-js.netlify.app
+
+### Connect 4 Web Game
 
 Connect 4 is played against the computer. Each player takes turns to drop a color checker into the grid. To win, a player must get four duplicate color checkers in a row. A winning row combination can be horizontal, vertical, or diagonal.
 
